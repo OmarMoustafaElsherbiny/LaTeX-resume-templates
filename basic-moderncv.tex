@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 10pt]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue, sans]{casual}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\recomputelengths
+
+
+% Personal data
+\name{John}{Doe}
+\title{Curriculum Vitae}
+\social[linkedin][https://www.linkedin.com/]{John Doe}
+\email{johndoe12@mail.com}
+\mobile{+1 (234) 567 890}
+\phone{+2 (345) 678 901}
+\social[whatsapp]{John Doe}
+\social[github][https://github.com/]{John Doe}
+
+
+% Black bullet points
+\newcommand\mybitem[1]{
+    \parbox[t]{3mm}{\textbullet}\parbox[t]{10cm}{#1}\\[1.6mm]
+}
+
+\renewcommand*{\labelitemi}{\textcolor{black}{\rmfamily\textbullet}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2002 -- 2005}{B.S. in Geography}{First American University}{Springfield}{\textit{Cumulative GPA: 3.96 / 4.00}}{Graduated with College Honors.}
+
+\section{Experience}
+\cventry{June 2006 - Jan. 2007}{GIS Research Project – Land-Use Change Patterns}{}{}{}{
+\mybitem{Utilized Geographic Information System (GIS) skills to map and analyze land-use change patterns.}\\
+\mybitem{Provided valuable insights for conservation efforts through data analysis and spatial mapping.}
+}
+
+\cventry{Feb. 2007 - Dec. 2007}{Urban Planning Intern}{Urban Planners}{}{}{
+    \mybitem{Collaborated with professionals to contribute to urban planning projects, emphasizing livability and environmental consciousness.}\\
+    \mybitem{Gained practical insights into the application of geographical principles in shaping policies for communities.}
+}
+
+\cventry{Feb. 2008 - Oct. 2008}{Fieldwork Expedition – Climate Change Impact Study}{}{}{}{
+    \mybitem{Conducted on-site research in a remote coastal region, assessing the effects of climate change on local communities.}\\
+    \mybitem{Strengthened fieldwork skills and developed a commitment to advocating for sustainable practices and climate resilience.}
+}
+
+
+\section{Skills}
+\cvlistdoubleitem{Geographic Information System (GIS)}{Data Analysis}
+\cvlistdoubleitem{Fieldwork and Research}{Environmental Advocacy}
+\cvlistdoubleitem{Urban Planning}{Effective Communication}
+
+
+\end{document}

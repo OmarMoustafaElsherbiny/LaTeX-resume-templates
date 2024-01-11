@@ -1,3 +1,7 @@
 simple-resume-cv
 hyphenat
 datetime2
+moderncv
+fontawesome5
+multirow
+arydshln
