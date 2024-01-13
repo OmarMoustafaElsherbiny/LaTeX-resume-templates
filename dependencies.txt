@@ -5,3 +5,6 @@ moderncv
 fontawesome5
 multirow
 arydshln
+academicons
+anyfontsize
+parskip
